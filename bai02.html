@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .colored-frame {
+            width: 300px;
+            height: 200px;
+            border: 10px solid rgb(157, 167, 187);
+            background-color: rgb(243, 246, 248);
+        }
+    </style>
+    <style>
+        table {
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        th, td {
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #d9eeee;
+        }
+        </style>
+</head>
+<body style="padding: 0% 150px;">       
+    <table border="1">
+        <caption><h2><i>My Store</i></h2></caption>
+        <thead>
+            <tr>
+                <th>Iteam Photo</th>
+                <th>Name</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td><img src="https://th.bing.com/th/id/OIP.a9HdT2e0WcDCu3hGLpjflwHaFP?w=276&h=195&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="" width="70" height="30"></td>
+                <td>Oranges</td>
+                <td>&#36;1 ea.</td>
+            </tr>
+            <tr>
+                <td><img src="https://nld.mediacdn.vn/2016/chuoitrinutgotchan-1479781920955.jpg"  alt="" width="70" height="30"></td>
+                <td>Bananas</td>
+                <td>&#36;0.75/lb</td>
+            </tr>
+            <tr>
+                <td><img src=https://th.bing.com/th/id/OIP.eO1kqSdkNLr_E-FkKvrBGwHaEo?w=272&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"  alt="" width="70" height="30"></td>
+                <td>Pomegranates</td>
+                <td>3 for &#36;5</td>
+            </tr>
+            <tr>
+                <td><img src="https://foodsguy.com/wp-content/uploads/2021/06/11-Best-Gummy-Bears-scaled.jpg"  alt="" width="70" height="30"></td>
+                <td>Gummy bears</td>
+                <td>&#36;6 per bag</td>
+            </tr>
+            <tr>
+                <td><img src="https://th.bing.com/th/id/OIP.sf3f2yw1NvwksKkn0l28fAHaFj?rs=1&pid=ImgDetMain"  alt="" width="70" height="30"></td>
+                <td>Broccoli</td>
+                <td>&#36;3 a head</td>
+            </tr>
+        </thead>
+    </table>
+    <form action="" method="get">
+        <h2>Booking Form</h2>
+        <div>
+            <label for="userName">Name:</label>
+            <input required id="userName" />
+        </div>
+        <br>
+        <div>
+            <label for="">Email</label>
+            <input required type="email" id="email" name="email">
+        </div>
+        <br>
+        <div>
+            <label for="quantity">Phone</label>
+            <input required type="number" id="quantity" name="quantity" >
+        </div>
+        <br>
+        <div>
+            <label for="birthday">date:</label>
+            <input type="date" id="birthday" name="birthday">
+        </div>
+        <br>
+        <div>
+            <label for="appt">Time</label>
+            <input type="time" id="appt" name="appt">
+        </div>
+        <br>
+        <div>
+            <label for="quantity">Number of Guests</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="5">
+        </div>
+        <br>
+        <div>
+            <input type="submit">
+        </div>
+    </form>
+    <form action="" method="get">
+        <h2>Car Purchase Form</h2>
+        <div>
+            <label for="userName">Name:</label>
+            <input required id="userName" />
+        </div>
+        <br>
+        <div>
+            <label for="">Email</label>
+            <input required type="email" id="email" name="email">
+        </div>
+        <br>
+        <div>
+            <label for="quantity">Phone</label>
+            <input required type="number" id="quantity" name="quantity" >
+        </div>
+        <br>
+        <div>
+            <label for="cars">Choose a Car:</label>
+            <select name="cars" id="cars">
+            <option value="Model 1">Model 1</option>
+            <option value="Model 2">Model 2</option>
+            <option value="Model 3">Model 3</option>
+            <option value="Model 4">Model 4</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="color">Choose a Color:</label>
+            <select name="color" id="color">
+            <option value="color">red</option>
+            <option value="color">blue</option>
+            <option value="color">black</option>
+            <option value="color">white</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="10">
+        </div>     
+        <br>
+        <div>
+            <label for="birthday">Delivery Date:</label>
+            <input type="date" id="birthday" name="birthday">
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit"/>
+        </div>
+    </form>
+    <form action="" method="get" class="colored-frame">
+        <div>
+            <caption><h2>Sở thích của bạn</h2></caption>
+        </div>
+        <div>
+            <label for="userName">Họ và tên</label>
+            <input required id="userName" />
+        </div>
+        <div>
+            <label for="">Email</label>
+            <input required type="email" id="email" name="email">
+        </div>
+        <div>
+            <label for="">Sở thích</label>
+            <tr>
+                <td><input name="gender" type="checkbox" />Thể thao</td>
+                <td><input name="gender" type="checkbox" />Âm nhạc</td>
+                <td><input name="gender" type="checkbox" />Đọc sách</td>
+            </tr>
+            <tr>
+                <td><input name="gender" type="checkbox" />Lướt web</td>
+                <td><input name="gender" type="checkbox" />Chơi game</td>
+                <td><input name="gender" type="checkbox" />ĐIện ảnh</td>
+            </tr>    
+            <tr>
+                <td><input name="gender" type="checkbox" />Du lịch</td>
+            </tr>
+            </div>
+            <div>
+                <input type="submit" value="Gửi thông tin">
+                <input type="reset" value="Nhập lại">
+            </div>
+    </form>
+    <form action="" method="get">
+        <h3>Market Research Survey</h3>
+        <p>Please take a few moments to complete this satisfaction survey</p>
+        <hr>
+        <h4>What is your age range?</h4>
+            <select name="age" id="age">
+            <option value="age">1-17</option>
+            <option value="age" checked>18-24 </option>
+            <option value="age">25-50</option>
+            <option value="age">51-75</option>
+            </select>
+        <p>What is your yearly income range?</p>
+        <select name="money" id="money">
+            <option value="money">&#36;0-&#36;25,000</option>
+            <option value="money">&#36;26,000-&#36;50,000 </option>
+            <option value="money">&#36;51,000-&#36;75,000 </option>
+            <option value="money">&#36;76,000-&#36;100,000 </option>
+        </select>
+        <h4>Gender identity</h4>
+        <div>
+            <input name="gender" type="radio" /> Male
+            <br>
+            <input name="gender" type="radio" /> Female
+            <br>
+            <input name="gender" type="radio" /> Nombinary
+            <br>
+            <input name="gender" type="radio" /> Other
+            <br>
+            <input required id="" />
+        </div>
+        <h4>Which of the following products have your purchased in the last 2 months.Please check all that apply</h4>
+        <div>
+            <input name="gender" type="checkbox" /> Product 1
+            <br>
+            <input name="gender" type="checkbox" /> Product 2
+            <br>
+            <input name="gender" type="checkbox" /> Product 3
+        </div>
+        <h4>How often would you use our new product?</h4>
+            <input name="gender" type="radio" /> Daily
+                <br>
+            <input name="gender" type="radio" /> Weekly
+                <br>
+            <input name="gender" type="radio" /> Monthly
+        <h4>What would you pay for the new product?</h4>
+        $<input type="text" style="width: 30px;">. <input type="text" style="width: 20px;">
+    </form>
+    <form action="">
+        <div>
+            <label for=""><b>What features would you like to see in the new product.</b></label><br>
+            <textarea name="" id="" cols="100" rows="7"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="">Please rate your level of agreement with the following statements.</label>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Strongly Disagree</th>
+                        <th>Disagree</th>
+                        <th>Agree</th>
+                        <th>Strongly Agree</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><b>Our products are priced fairly.</b></td>
+                        <td><input type="radio"><br> 1</td>
+                        <td><input type="radio"><br> 2</td>
+                        <td><input type="radio"><br> 3</td>
+                        <td><input type="radio"><br> 4</td>
+                    </tr>
+                    <tr>
+                        <td><b>Our products are high quality.</b></td>
+                        <td><input type="radio"><br> 1</td>
+                        <td><input type="radio"><br> 2</td>
+                        <td><input type="radio"><br> 3</td>
+                        <td><input type="radio"><br> 4</td>
+                    </tr>
+                    <tr>
+                        <td><b>You would recommend our product to a friend or coworker.</b></td>
+                        <td><input type="radio"><br> 1</td>
+                        <td><input type="radio"><br> 2</td>
+                        <td><input type="radio"><br> 3</td>
+                        <td><input type="radio"><br> 4</td>
+                    </tr>
+                </tbody>                
+            </table>
+            <br>
+        </div>
+        <div>
+            <input type="submit" value="submit">
+        </div>
+    </form>
+</body>
+</html>
